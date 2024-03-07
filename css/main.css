@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background: #ECE9E9;
+}
+
+h2 {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.5rem;
+}
+
+h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 2rem;
+  border-bottom: 2px black solid;
+}
+
+.customButton {
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  padding: 5px 20px;
+  background-color: #C3B299;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+#title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border-bottom: 3px #396D84 solid;
+  border-radius: 4px;
+}
+nav ul li {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+nav ul li a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+nav ul li:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+#hero {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#hero .card {
+  display: flex;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 15px;
+  background-color: #C3B299;
+  border-radius: 10px;
+}
+#hero .card img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.textContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background-color: #CBD4C2;
+}
+.textContent p {
+  width: 40%;
+  margin: 0 0 1em 0;
+}
+.textContent h2 {
+  margin: 0.5em;
+}
+
+#projects {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+#projects .largeImage {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+#projects .largeImage img {
+  margin-right: 3%;
+  border-radius: 15px;
+}
+#projects .largeImage h2 {
+  margin: 0 0 0.5em 0;
+}
+
+#languages {
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #CBD4C2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#languages #languagesContent {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+#languages #languagesContent p {
+  width: auto;
+}
+#languages #languagesContent #icons {
+  min-width: 152px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#languages #languagesContent #icons .icon {
+  background-color: #C3B299;
+  border-radius: 5px;
+  height: 64px;
+  width: 64px;
+  padding: 3px;
+  margin: 2px;
+}
+#languages #languagesContent #icons img {
+  border-radius: 5px;
+  height: 64px;
+  width: 64px;
+}
+
+#projects {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects .projectCard {
+  display: flex;
+  width: 60%;
+  margin: 20px;
+  background-color: #CBD4C2;
+  padding: 10px;
+  border-radius: 10px;
+}
+#projects .projectCard img {
+  border-radius: 15px;
+}
+#projects .projectCard #pCardContent {
+  margin-left: 1%;
+  margin-right: 1%;
+  display: flex;
+  flex-direction: column;
+}
+#projects .projectCard #pCardContent p {
+  height: 100%;
+}
+#projects .projectCard #pCardContent button {
+  margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 1000px) {
+  #projects .largeImage {
+    flex-direction: column;
+  }
+  #languages #languagesContent {
+    flex-direction: column;
+  }
+  #projects .projectCard {
+    width: 80%;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero .card {
+    height: 200px;
+  }
+  .textContent p {
+    width: 80%;
+  }
+  #languages #languagesContent {
+    width: 80%;
+  }
+}/*# sourceMappingURL=main.css.map */

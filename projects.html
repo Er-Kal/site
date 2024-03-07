@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/demos.css">
+</head>
+<body>
+    <section id="title">
+        <h1>Eriks K.</h1>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="projects">
+        <div class="projectCard">
+            <img src="img/pong.png">
+            <div id="pCardContent">
+                <h2>Pong</h2>
+                <p>This is my first attempt at using a framework. I chose to use a game framework as its more graphical and easier to see what was happening.
+                <br>The goal was to just see if I could recreate a version of pong which I managed to do.
+                <br>There were a few bugs and still are but for the most part it is functional.<br></p>
+                <button class="customButton" onclick='location.href="https://github.com/Er-Kal/pong"'>Project Github</button>
+            </div>
+        </div>
+        <div class="projectCard">
+            <div class="demo">
+                <div id="calc">
+                    <div id="calcScreen">
+                        <p id="text">0</p>
+                        <p id="change"></p>
+                    </div>
+                    <script src="js/calculator.js"></script>
+                    <div id="calculator">
+                        <div class="row">
+                            <button class="number" value=1 onclick="numberClick(this)">1</button>
+                            <button class="number" value=2 onclick="numberClick(this)">2</button>
+                            <button class="number" value=3 onclick="numberClick(this)">3</button>
+                        </div>
+                        <div class="row">
+                            <button class="number" value=4 onclick="numberClick(this)">4</button>
+                            <button class="number" value=5 onclick="numberClick(this)">5</button>
+                            <button class="number" value=6 onclick="numberClick(this)">6</button>
+                        </div>
+                        <div class="row">
+                            <button class="number" value=7 onclick="numberClick(this)">7</button>
+                            <button class="number" value=8 onclick="numberClick(this)">8</button>
+                            <button class="number" value=9 onclick="numberClick(this)">9</button>
+                        </div>
+                        <div class="row">
+                            <button class="operator" onclick="operator(this)">+</button>
+                            <button class="number" value=0 onclick="numberClick(this)">0</button>
+                            <button class="operator" onclick="operator(this)">-</button>
+                        </div>
+                        <div class="row">
+                            <button class="operator" onclick="operator(this)">*</button>
+                            <button class="operator" onclick="operator(this)">/</button>
+                            <button class="operator" onclick="operator(this)">^</button>
+                        </div>
+                        <button id="clear" onclick="clearTotal()">AC</button>
+                    </div>
+                </div>
+            </div>
+            <div id="pCardContent">
+                <h2>Calculator</h2>
+                <p>The demonstration on the right is a calculator made in vanilla javascript. <br> To use it, you use the provided keypad to add a digit to the changes column. Then by clicking an operator it completes that instruction against the total.</p>
+                <button class="customButton" onclick='location.href="https://github.com/Er-Kal/calculatorJS"'>Project Github</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
