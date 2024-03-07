@@ -1,5 +1,6 @@
 .demo {
   width: 100%;
+  max-width: 400px;
 }
 
 #calc {
@@ -59,6 +60,7 @@
 @media only screen and (max-width: 1000px) {
   .demo {
     min-width: none;
+    max-width: 100%;
   }
   .demo #calc {
     min-width: 0;
